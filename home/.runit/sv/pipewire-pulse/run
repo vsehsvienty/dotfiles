@@ -1,0 +1,4 @@
+#!/bin/sh
+# Wait for WirePlumber to start
+sv check "$HOME/.runit/sv/wireplumber" >/dev/null || exit 1
+exec pipewire-pulse

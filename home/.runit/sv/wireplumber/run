@@ -1,0 +1,4 @@
+#!/bin/sh
+# Wait for PipeWire daemon to start
+sv check "$HOME/.runit/sv/pipewire" >/dev/null || exit 1
+exec wireplumber

@@ -1,0 +1,422 @@
+.
+├── config
+│   ├── dwm
+│   │   ├── config.def.h
+│   │   ├── config.h
+│   │   ├── config.mk
+│   │   ├── drw.c
+│   │   ├── drw.h
+│   │   ├── drw.o
+│   │   ├── dwm
+│   │   ├── dwm.1
+│   │   ├── dwmblocks
+│   │   │   ├── blocks.def.h
+│   │   │   ├── blocks.h
+│   │   │   ├── dwmblocks
+│   │   │   ├── dwmblocks.c
+│   │   │   ├── LICENSE
+│   │   │   ├── Makefile
+│   │   │   └── README.md
+│   │   ├── dwm.c
+│   │   ├── dwm.desktop
+│   │   ├── dwm.o
+│   │   ├── dwm.png
+│   │   ├── LICENSE
+│   │   ├── Makefile
+│   │   ├── patch
+│   │   │   ├── alttab.c
+│   │   │   ├── alttab.h
+│   │   │   ├── aspectresize.c
+│   │   │   ├── aspectresize.h
+│   │   │   ├── attachx.c
+│   │   │   ├── attachx.h
+│   │   │   ├── autostart.c
+│   │   │   ├── autostart.h
+│   │   │   ├── bar_alpha.c
+│   │   │   ├── bar_alpha.h
+│   │   │   ├── bar_alternativetags.c
+│   │   │   ├── bar_alternativetags.h
+│   │   │   ├── bar_anybar.c
+│   │   │   ├── bar_anybar.h
+│   │   │   ├── bar_awesomebar.c
+│   │   │   ├── bar_awesomebar.h
+│   │   │   ├── bar.c
+│   │   │   ├── bar_dwmblocks.c
+│   │   │   ├── bar_dwmblocks.h
+│   │   │   ├── bar_ewmhtags.c
+│   │   │   ├── bar_ewmhtags.h
+│   │   │   ├── bar_fancybar.c
+│   │   │   ├── bar_fancybar.h
+│   │   │   ├── bar_flexwintitle.c
+│   │   │   ├── bar_flexwintitle.h
+│   │   │   ├── bar.h
+│   │   │   ├── bar_holdbar.c
+│   │   │   ├── bar_holdbar.h
+│   │   │   ├── bar_indicators.c
+│   │   │   ├── bar_indicators.h
+│   │   │   ├── bar_launcher.c
+│   │   │   ├── bar_launcher.h
+│   │   │   ├── bar_layoutmenu.c
+│   │   │   ├── bar_layoutmenu.h
+│   │   │   ├── bar_ltsymbol.c
+│   │   │   ├── bar_ltsymbol.h
+│   │   │   ├── bar_powerline_status.c
+│   │   │   ├── bar_powerline_status.h
+│   │   │   ├── bar_powerline_tags.c
+│   │   │   ├── bar_powerline_tags.h
+│   │   │   ├── bar_status2d.c
+│   │   │   ├── bar_status2d.h
+│   │   │   ├── bar_statusbutton.c
+│   │   │   ├── bar_statusbutton.h
+│   │   │   ├── bar_status.c
+│   │   │   ├── bar_statuscmd.c
+│   │   │   ├── bar_statuscmd.h
+│   │   │   ├── bar_statuscolors.c
+│   │   │   ├── bar_statuscolors.h
+│   │   │   ├── bar_status.h
+│   │   │   ├── bar_systray.c
+│   │   │   ├── bar_systray.h
+│   │   │   ├── bar_tabgroups.c
+│   │   │   ├── bar_tabgroups.h
+│   │   │   ├── bar_taggrid.c
+│   │   │   ├── bar_taggrid.h
+│   │   │   ├── bar_tagicons.c
+│   │   │   ├── bar_tagicons.h
+│   │   │   ├── bar_taglabels.c
+│   │   │   ├── bar_taglabels.h
+│   │   │   ├── bar_tagpreview.c
+│   │   │   ├── bar_tagpreview.h
+│   │   │   ├── bar_tags.c
+│   │   │   ├── bar_tags.h
+│   │   │   ├── bar_vtcolors.c
+│   │   │   ├── bar_vtcolors.h
+│   │   │   ├── bar_winicon.c
+│   │   │   ├── bar_winicon.h
+│   │   │   ├── bar_wintitleactions.c
+│   │   │   ├── bar_wintitleactions.h
+│   │   │   ├── bar_wintitle.c
+│   │   │   ├── bar_wintitle_floating.c
+│   │   │   ├── bar_wintitle_floating.h
+│   │   │   ├── bar_wintitle.h
+│   │   │   ├── bar_wintitle_hidden.c
+│   │   │   ├── bar_wintitle_hidden.h
+│   │   │   ├── cfacts.c
+│   │   │   ├── cfacts.h
+│   │   │   ├── cmdcustomize.c
+│   │   │   ├── cmdcustomize.h
+│   │   │   ├── combo.c
+│   │   │   ├── combo.h
+│   │   │   ├── cool_autostart.c
+│   │   │   ├── cool_autostart.h
+│   │   │   ├── cyclelayouts.c
+│   │   │   ├── cyclelayouts.h
+│   │   │   ├── decorationhints.c
+│   │   │   ├── decorationhints.h
+│   │   │   ├── distributetags.c
+│   │   │   ├── distributetags.h
+│   │   │   ├── dragcfact.c
+│   │   │   ├── dragcfact.h
+│   │   │   ├── dragmfact.c
+│   │   │   ├── dragmfact.h
+│   │   │   ├── dwmc
+│   │   │   ├── dwmc.c
+│   │   │   ├── dwmc.h
+│   │   │   ├── exresize.c
+│   │   │   ├── exresize.h
+│   │   │   ├── fakefullscreenclient.c
+│   │   │   ├── fakefullscreenclient.h
+│   │   │   ├── floatpos.c
+│   │   │   ├── floatpos.h
+│   │   │   ├── focusadjacenttag.c
+│   │   │   ├── focusadjacenttag.h
+│   │   │   ├── focusdir.c
+│   │   │   ├── focusdir.h
+│   │   │   ├── focusfollowmouse.c
+│   │   │   ├── focusfollowmouse.h
+│   │   │   ├── focusmaster.c
+│   │   │   ├── focusmaster.h
+│   │   │   ├── focusurgent.c
+│   │   │   ├── focusurgent.h
+│   │   │   ├── fsignal.c
+│   │   │   ├── fsignal.h
+│   │   │   ├── fullscreen.c
+│   │   │   ├── fullscreen.h
+│   │   │   ├── include.c
+│   │   │   ├── include.h
+│   │   │   ├── inplacerotate.c
+│   │   │   ├── inplacerotate.h
+│   │   │   ├── insets.c
+│   │   │   ├── insets.h
+│   │   │   ├── ipc
+│   │   │   │   ├── dwm-msg.c
+│   │   │   │   ├── ipc.c
+│   │   │   │   ├── IPCClient.c
+│   │   │   │   ├── IPCClient.h
+│   │   │   │   ├── ipc.h
+│   │   │   │   ├── util.c
+│   │   │   │   ├── util.h
+│   │   │   │   ├── yajl_dumps.c
+│   │   │   │   └── yajl_dumps.h
+│   │   │   ├── ipc.c
+│   │   │   ├── ipc.h
+│   │   │   ├── keymodes.c
+│   │   │   ├── keymodes.h
+│   │   │   ├── killunsel.c
+│   │   │   ├── killunsel.h
+│   │   │   ├── layout_bstack.c
+│   │   │   ├── layout_bstack.h
+│   │   │   ├── layout_bstackhoriz.c
+│   │   │   ├── layout_bstackhoriz.h
+│   │   │   ├── layout_centeredfloatingmaster.c
+│   │   │   ├── layout_centeredfloatingmaster.h
+│   │   │   ├── layout_centeredmaster.c
+│   │   │   ├── layout_centeredmaster.h
+│   │   │   ├── layout_columns.c
+│   │   │   ├── layout_columns.h
+│   │   │   ├── layout_deck.c
+│   │   │   ├── layout_deck.h
+│   │   │   ├── layout_facts.c
+│   │   │   ├── layout_fibonacci.c
+│   │   │   ├── layout_fibonacci.h
+│   │   │   ├── layout_flextile-deluxe.c
+│   │   │   ├── layout_flextile-deluxe.h
+│   │   │   ├── layout_gapplessgrid.c
+│   │   │   ├── layout_gapplessgrid.h
+│   │   │   ├── layout_grid.c
+│   │   │   ├── layout_grid.h
+│   │   │   ├── layout_horizgrid.c
+│   │   │   ├── layout_horizgrid.h
+│   │   │   ├── layoutmenu.sh
+│   │   │   ├── layout_monocle.c
+│   │   │   ├── layout_monocle.h
+│   │   │   ├── layout_nrowgrid.c
+│   │   │   ├── layout_nrowgrid.h
+│   │   │   ├── layout_tile.c
+│   │   │   ├── layout_tile.h
+│   │   │   ├── maximize.c
+│   │   │   ├── maximize.h
+│   │   │   ├── moveplace.c
+│   │   │   ├── moveplace.h
+│   │   │   ├── moveresize.c
+│   │   │   ├── moveresize.h
+│   │   │   ├── movestack.c
+│   │   │   ├── movestack.h
+│   │   │   ├── mpdcontrol.c
+│   │   │   ├── mpdcontrol.h
+│   │   │   ├── nametag.c
+│   │   │   ├── nametag.h
+│   │   │   ├── nomodbuttons.c
+│   │   │   ├── nomodbuttons.h
+│   │   │   ├── pertag.c
+│   │   │   ├── pertag.h
+│   │   │   ├── placedir.c
+│   │   │   ├── placedir.h
+│   │   │   ├── placemouse.c
+│   │   │   ├── placemouse.h
+│   │   │   ├── push.c
+│   │   │   ├── push.h
+│   │   │   ├── push_no_master.c
+│   │   │   ├── push_no_master.h
+│   │   │   ├── renamed_scratchpads.c
+│   │   │   ├── renamed_scratchpads.h
+│   │   │   ├── reorganizetags.c
+│   │   │   ├── reorganizetags.h
+│   │   │   ├── restartsig.c
+│   │   │   ├── restartsig.h
+│   │   │   ├── riodraw.c
+│   │   │   ├── riodraw.h
+│   │   │   ├── rotatestack.c
+│   │   │   ├── rotatestack.h
+│   │   │   ├── roundedcorners.c
+│   │   │   ├── roundedcorners.h
+│   │   │   ├── scratchpad_alt_1.c
+│   │   │   ├── scratchpad_alt_1.h
+│   │   │   ├── scratchpad.c
+│   │   │   ├── scratchpad.h
+│   │   │   ├── seamless_restart.c
+│   │   │   ├── seamless_restart.h
+│   │   │   ├── selfrestart.c
+│   │   │   ├── selfrestart.h
+│   │   │   ├── setborderpx.c
+│   │   │   ├── setborderpx.h
+│   │   │   ├── shiftboth.c
+│   │   │   ├── shiftboth.h
+│   │   │   ├── shift.c
+│   │   │   ├── shift.h
+│   │   │   ├── shiftswaptags.c
+│   │   │   ├── shiftswaptags.h
+│   │   │   ├── shifttag.c
+│   │   │   ├── shifttagclients.c
+│   │   │   ├── shifttagclients.h
+│   │   │   ├── shifttag.h
+│   │   │   ├── shiftview.c
+│   │   │   ├── shiftviewclients.c
+│   │   │   ├── shiftviewclients.h
+│   │   │   ├── shiftview.h
+│   │   │   ├── sizehints_ruled.c
+│   │   │   ├── sizehints_ruled.h
+│   │   │   ├── sortscreens.c
+│   │   │   ├── sortscreens.h
+│   │   │   ├── stacker.c
+│   │   │   ├── stacker.h
+│   │   │   ├── sticky.c
+│   │   │   ├── sticky.h
+│   │   │   ├── swallow.c
+│   │   │   ├── swallow.h
+│   │   │   ├── swapfocus.c
+│   │   │   ├── swapfocus.h
+│   │   │   ├── swaptags.c
+│   │   │   ├── swaptags.h
+│   │   │   ├── switchcol.c
+│   │   │   ├── switchcol.h
+│   │   │   ├── tab.c
+│   │   │   ├── tab.h
+│   │   │   ├── tagall.c
+│   │   │   ├── tagall.h
+│   │   │   ├── tagallmon.c
+│   │   │   ├── tagallmon.h
+│   │   │   ├── tagothermonitor.c
+│   │   │   ├── tagothermonitor.h
+│   │   │   ├── tagswapmon.c
+│   │   │   ├── tagswapmon.h
+│   │   │   ├── tapresize.c
+│   │   │   ├── tapresize.h
+│   │   │   ├── togglefullscreen.c
+│   │   │   ├── togglefullscreen.h
+│   │   │   ├── toggletopbar.c
+│   │   │   ├── toggletopbar.h
+│   │   │   ├── transferall.c
+│   │   │   ├── transferall.h
+│   │   │   ├── transfer.c
+│   │   │   ├── transfer.h
+│   │   │   ├── unfloatvisible.c
+│   │   │   ├── unfloatvisible.h
+│   │   │   ├── vanitygaps.c
+│   │   │   ├── vanitygaps.h
+│   │   │   ├── warp.c
+│   │   │   ├── warp.h
+│   │   │   ├── winview.c
+│   │   │   ├── winview.h
+│   │   │   ├── xkb.c
+│   │   │   ├── xkb.h
+│   │   │   ├── xrdb.c
+│   │   │   ├── xrdb.h
+│   │   │   ├── xresources.c
+│   │   │   ├── xresources.h
+│   │   │   ├── zoomswap.c
+│   │   │   └── zoomswap.h
+│   │   ├── patches.def.h
+│   │   ├── patches.h
+│   │   ├── README
+│   │   ├── README.md
+│   │   ├── transient.c
+│   │   ├── util.c
+│   │   ├── util.h
+│   │   └── util.o
+│   ├── picom
+│   │   └── picom.conf
+│   ├── rofi
+│   │   └── config.rasi
+│   └── st
+│       ├── arg.h
+│       ├── config.def.h
+│       ├── config.h
+│       ├── config.mk
+│       ├── FAQ
+│       ├── hb.c
+│       ├── hb.h
+│       ├── LEGACY
+│       ├── LICENSE
+│       ├── Makefile
+│       ├── patch
+│       │   ├── alpha.c
+│       │   ├── alpha.h
+│       │   ├── background_image_x.c
+│       │   ├── background_image_x.h
+│       │   ├── boxdraw.c
+│       │   ├── boxdraw.h
+│       │   ├── copyurl.c
+│       │   ├── copyurl.h
+│       │   ├── drag-n-drop.c
+│       │   ├── drag-n-drop.h
+│       │   ├── externalpipe.c
+│       │   ├── externalpipe.h
+│       │   ├── fixkeyboardinput.c
+│       │   ├── font2.c
+│       │   ├── font2.h
+│       │   ├── fullscreen_x.c
+│       │   ├── fullscreen_x.h
+│       │   ├── invert.c
+│       │   ├── invert.h
+│       │   ├── iso14755.c
+│       │   ├── iso14755.h
+│       │   ├── keyboardselect_reflow_st.c
+│       │   ├── keyboardselect_reflow_st.h
+│       │   ├── keyboardselect_reflow.txt
+│       │   ├── keyboardselect_reflow_x.c
+│       │   ├── keyboardselect_reflow_x.h
+│       │   ├── keyboardselect_st.c
+│       │   ├── keyboardselect_st.h
+│       │   ├── keyboardselect_x.c
+│       │   ├── keyboardselect_x.h
+│       │   ├── netwmicon.c
+│       │   ├── netwmicon_ff.c
+│       │   ├── netwmicon.h
+│       │   ├── netwmicon_icon.h
+│       │   ├── netwmicon_legacy.c
+│       │   ├── newterm.c
+│       │   ├── newterm.h
+│       │   ├── opencopied.c
+│       │   ├── opencopied.h
+│       │   ├── openselectedtext.c
+│       │   ├── openselectedtext.h
+│       │   ├── openurlonclick.c
+│       │   ├── openurlonclick.h
+│       │   ├── osc133.c
+│       │   ├── osc133.h
+│       │   ├── osc7.c
+│       │   ├── osc7.h
+│       │   ├── reflow.c
+│       │   ├── reflow.h
+│       │   ├── rightclicktoplumb_st.c
+│       │   ├── rightclicktoplumb_st.h
+│       │   ├── rightclicktoplumb_x.c
+│       │   ├── rightclicktoplumb_x.h
+│       │   ├── scrollback.c
+│       │   ├── scrollback.h
+│       │   ├── st_embedder_x.c
+│       │   ├── st_embedder_x.h
+│       │   ├── st_include.c
+│       │   ├── st_include.h
+│       │   ├── sync.c
+│       │   ├── sync.h
+│       │   ├── utils.h
+│       │   ├── x_include.c
+│       │   ├── x_include.h
+│       │   ├── xresources.c
+│       │   └── xresources.h
+│       ├── patches.def.h
+│       ├── patches.h
+│       ├── README
+│       ├── README.md
+│       ├── sixel.c
+│       ├── sixel.h
+│       ├── sixel_hls.c
+│       ├── sixel_hls.h
+│       ├── st
+│       ├── st.1
+│       ├── st.c
+│       ├── st.desktop
+│       ├── st.h
+│       ├── st.info
+│       ├── st.o
+│       ├── TODO
+│       ├── win.h
+│       ├── x.c
+│       └── x.o
+├── home
+├── laptop
+│   └── dwmblocks
+└── log
+
+13 directories, 407 files
